@@ -1,0 +1,109 @@
+/* Center the entire page content */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom, #87ceeb, #f0f8ff);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    /* subtle cloud shapes background */
+    background-image:
+      radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.8) 10%, transparent 20%),
+      radial-gradient(circle at 40% 30%, rgba(255, 255, 255, 0.7) 10%, transparent 20%),
+      radial-gradient(circle at 70% 40%, rgba(255, 255, 255, 0.75) 15%, transparent 25%);
+    background-repeat: no-repeat;
+    background-size: 150px 100px;
+  }
+  
+  .container {
+    max-width: 600px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    padding: 40px 30px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  
+  /* Input and button styles */
+  input, button {
+    font-family: inherit;
+    padding: 10px 14px;
+    margin: 8px 4px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    width: calc(100% - 28px); /* full width minus padding/margin */
+    box-sizing: border-box;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    margin-top: 12px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Weather results */
+  #weatherResult {
+    margin-top: 25px;
+  }
+  
+  /* Hourly forecast container */
+  .hourly-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  /* Smaller hour boxes */
+  .hour-box {
+    background: #f8f9fa;
+    padding: 10px 8px;
+    border-radius: 10px;
+    width: 90px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, background 0.3s ease;
+    cursor: default;
+    font-size: 14px;
+    font-weight: 500;
+    color: #222;
+  }
+  
+  .hour-box:hover {
+    transform: scale(1.1);
+    background: #e0ecff;
+  }
+  
+  .hour-box img {
+    width: 35px;
+    height: 35px;
+    margin-top: 6px;
+  }
+  
+  /* Responsive: full width on small screens */
+  @media (max-width: 420px) {
+    .container {
+      max-width: 90%;
+      padding: 15px 20px;
+    }
+    .hour-box {
+      width: 70px;
+      font-size: 12px;
+    }
+    input, button {
+      font-size: 14px;
+    }
+  }
+  
