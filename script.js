@@ -1,4 +1,4 @@
-const apiKey = "e68f45a46dc1463f97575342252805";
+const apiKey = "YOUR_API_KEY_HERE";
 const baseUrl = "https://api.weatherapi.com/v1";
 
 let currentTempUnit = "C"; // 'C' or 'F'
